@@ -1,8 +1,22 @@
 {
-  "name": "qwik-hello-world-app",
+  "name": "qwik-city-static-hello-world-app",
   "version": "1.0.0",
+  "description": "Minimal Qwik City static export demo for Zerops (Node build, Nginx runtime).",
+  "author": "Zerops",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerops-recipe-apps/qwik-city-static-hello-world-app.git"
+  },
+  "homepage": "https://github.com/zerops-recipe-apps/qwik-city-static-hello-world-app",
+  "bugs": {
+    "url": "https://github.com/zerops-recipe-apps/qwik-city-static-hello-world-app/issues"
+  },
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "build": "vite build && vite build -c adapters/static/vite.config.ts",
     "build.client": "vite build",
@@ -11,11 +25,24 @@
     "start": "vite preview"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.12.1",
-    "@builder.io/qwik-city": "^1.12.1",
-    "@types/node": "^20.14.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.4.2",
-    "vite-tsconfig-paths": "^4.3.2"
-  }
+    "@builder.io/qwik": "1.20.0",
+    "@builder.io/qwik-city": "1.20.0",
+    "@types/node": "26.1.2",
+    "typescript": "5.9.3",
+    "vite": "6.4.3",
+    "vite-tsconfig-paths": "6.1.1"
+  },
+  "overrides": {
+    "sharp": "0.35.3",
+    "vite": "6.4.3"
+  },
+  "keywords": [
+    "qwik",
+    "qwik-city",
+    "vite",
+    "zerops",
+    "static-export",
+    "nginx",
+    "hello-world"
+  ]
 }
