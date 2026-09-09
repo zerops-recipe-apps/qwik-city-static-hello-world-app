@@ -6,7 +6,7 @@ Qwik City SPA compiled to static HTML/CSS/JS by Vite — served by nginx in prod
 
 - HTTP port: dev `5173` (Vite) / prod `80` (nginx)
 - Siblings: —
-- Runtime base: dev `nodejs@22` / prod `static`
+- Runtime base: dev `nodejs@24` / prod `static`
 
 ## Zerops dev
 

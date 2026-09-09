@@ -29,7 +29,7 @@ zerops:
       # Build with Node.js (npm/npx), serve with Nginx.
       # The build container compiles Qwik source into static
       # HTML/CSS/JS — Node.js is NOT present at runtime.
-      base: nodejs@22
+      base: nodejs@24
 
       buildCommands:
         - npm ci
@@ -59,7 +59,7 @@ zerops:
 
   - setup: dev
     build:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
 
       buildCommands:
@@ -75,9 +75,9 @@ zerops:
         - node_modules
 
     run:
-      # nodejs@22 at runtime — the developer needs Node.js to run
+      # nodejs@24 at runtime — the developer needs Node.js to run
       # 'npm run dev' or other Qwik CLI commands via SSH.
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
 
       # Keep the container alive without starting any server.
